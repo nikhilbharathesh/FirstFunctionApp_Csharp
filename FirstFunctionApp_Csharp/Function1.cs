@@ -26,7 +26,7 @@ namespace FirstFunctionApp_Csharp
             name = name ?? data?.name;
 
             return name != null
-                ? (ActionResult)new OkObjectResult($"Hello there again, {name}")
+                ? (ActionResult)new OkObjectResult($"Finally deployed, {name}")
                 : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
         }
     }
